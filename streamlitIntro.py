@@ -37,7 +37,7 @@ if image_path:
             model = load_model()
             pred=model.predict(img_tensor)
             pred_class=classes[np.argmax(pred)]
-            st.write("Predicted Class:",pred_class)
+            st.write("Predicted Class:",pred)
             st.image(content,use_column_width=True)
     except:
         st.write("Invalid URL")
